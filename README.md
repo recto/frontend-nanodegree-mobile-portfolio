@@ -31,7 +31,7 @@ To satisfy PageSpeed requirement, the following changes were made.
 * Removed link to style.css and added those styles inline in index.html.
 
 ### Changes for pizza.html
-It appeared updatePositions in views/js/main.js caused rendering views/images/pizza.png when scrolling. Since it does not add much value to the size, this function is removed.
+It appeared updatePositions in views/js/main.js caused rendering views/images/pizza.png when scrolling. Since it does not add much value to the size, this function is removed. Also, determineDx was simplified to avoid unnecessary calculation based on element properties.
 
 ---
 Description from the original project
